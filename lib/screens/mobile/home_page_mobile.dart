@@ -43,17 +43,17 @@ class _PruebaAppMobileState extends State<PruebaAppMobile> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: SelectableText(widget.title),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const PImage(),
-            const Text(
+            const SelectableText(
               'You have pushed the button this many times:',
             ),
-            Text(
+            SelectableText(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
@@ -61,7 +61,7 @@ class _PruebaAppMobileState extends State<PruebaAppMobile> {
               message: 'Decrement',
               child: TextButton(
                 onPressed: () => _decrementCounter(context),
-                child: const Text('Decrement'),
+                child: const SelectableText('Decrement'),
               ),
             ),
           ],

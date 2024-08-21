@@ -5,12 +5,12 @@ Future<void> showDialogUtility(
   return showDialog(
     context: context,
     builder: (context) => AlertDialog(
-      title: Text(title),
-      content: Text(content),
+      title: SelectableText(title),
+      content: SelectableText(content),
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: const Text('Ok'),
+          child: const SelectableText('Ok'),
         )
       ],
     ),
